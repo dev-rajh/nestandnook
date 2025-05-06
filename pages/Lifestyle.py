@@ -7,7 +7,7 @@ st.set_page_config(layout="wide")
 df = pd.read_excel("data/products.xlsx")
 
 # Filter by category
-category = "Home Decor"
+category = "Lifestyle"  # or "Home Decor"
 df = df[df['category'] == category]
 
 st.title(category)
